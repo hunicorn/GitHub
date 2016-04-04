@@ -3,14 +3,14 @@
 int main()
 {
 	
-	int grade[5];
+	int grade[99];
 	int pass=0;
 	int fail=0;
 	int sum=0;
 	float average;
 	int i=0;
 	
-	while(i<=5)
+	while(i<=99)
 	{
 		
 		if(0<grade[i]<60)
@@ -25,7 +25,7 @@ int main()
 		i=i+1;
 		
 	}
-	average=sum/6;
+	average=sum/100;
 	
 	printf("Passes: %d\n",pass);
 	printf("Fails: %d}n",fail);
