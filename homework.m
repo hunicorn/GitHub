@@ -41,6 +41,7 @@ elseif i2>=i1 && j1>=j2
 elseif i2>=i1 && j2>=j1
     B=-A(i1:i2,j1:j2)
     A(i1:i2,j1:j2)=B
+
 end
 
 
