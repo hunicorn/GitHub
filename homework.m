@@ -1,4 +1,6 @@
-
+%%% İsmail Akdağ
+%%% 01.37
+%%% 6.4.2016
 clc
 m=input('Please enter the number of rows:');
 n=input('Please enter the number of columns:');
@@ -20,21 +22,25 @@ for i=1:m
         end
     end
 end
+
 fprintf('The A(%d,%d)=%d is max. \n',i1,j1,maksimum)
 fprintf('The A(%d,%d)=%d is min.\n',i2,j2,minimum)
-if i1>i2 && j1>j2
-ara=A(i2:i1,j2:j1)
-B=-ara
+
+if i1>=i2 && j1>=j2
+    B=-A(i2:i1,j2:j1)
+    A(i2:i1,j2:j1)=B
+
 elseif i1>=i2 && j2>=j1
-    ara=A(i2:i1,j1:j2)
-B=-ara
+    B=-A(i2:i1,j1:j2)
+    A(i2:i1,j1:j2)=B
+
 elseif i2>=i1 && j1>=j2
-    ara=A(i1:i2,j2:j1)
-B=-ara
+    B=-A(i1:i2,j2:j1)
+    A(i1:i2,j2:j1)=B
+
 elseif i2>=i1 && j2>=j1
-    ara=A(i1:i1,j2:j1)
-B=-ara
+    B=-A(i1:i2,j1:j2)
+    A(i1:i2,j1:j2)=B
 end
 
-    
-    
+
